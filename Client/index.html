@@ -11,16 +11,21 @@
     <a class="skip-link" href="#main">Skip to main content</a>
     <!-- Header Section -->
      <header>
-        <nav class="nav-menu">
-            <h1 class="logo">YONGO 1</h1>
-            <ul>
-                <li><a class="nav__link" href="#home">Home</a></li>
-                <li><a class="nav__link" href="#about">About</a></li>
-                <li><a class="nav__link" href="#services">Services</a></li>
-                <li><a class="nav__link" href="#projects">Projects</a></li>
-                <li><a class="nav__link" href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav class="nav-menu" aria-label="Primary navigation">
+                <h1 class="logo">YONGO 1</h1>
+                <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="hamburger" aria-hidden="true"></span>
+                </button>
+                <ul id="primary-navigation">
+                    <li><a class="nav__link" href="#home">Home</a></li>
+                    <li><a class="nav__link" href="#about">About</a></li>
+                    <li><a class="nav__link" href="#services">Services</a></li>
+                    <li><a class="nav__link" href="#projects">Projects</a></li>
+                    <li><a class="nav__link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <!-- Main Content Section -->
      <main id="main">

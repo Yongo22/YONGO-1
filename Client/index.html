@@ -4,66 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YONGO 1/ Full Stack Developer Journey</title>
-    <meta name="description" content="A modern HTML5 sematic structure built for full stack development learning roadmap.">
+    <meta name="description" content="A modern HTML5 semantic structure built for full stack development learning roadmap.">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
     <!-- Header Section -->
      <header>
-        <nav>
+        <nav class="nav-menu">
             <h1 class="logo">YONGO 1</h1>
-            <UL>
-                <LI><a href="#home">Home</a></LI>
-                <LI><a href="#about">About</a></LI>
-                <LI><a href="#services">Services</a></LI>
-                <LI><a href="#projects">Projects</a></LI>
-                <LI><a href="#contact">Contact</a></LI>
-            </UL>
+            <ul>
+                <li><a class="nav__link" href="#home">Home</a></li>
+                <li><a class="nav__link" href="#about">About</a></li>
+                <li><a class="nav__link" href="#services">Services</a></li>
+                <li><a class="nav__link" href="#projects">Projects</a></li>
+                <li><a class="nav__link" href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
     <!-- Main Content Section -->
-     <main>
+     <main id="main">
         <!-- Hero Section  -->
-         <section id="home">
+         <section id="home"><div class="container">
             <h2>Welcome to YONGO 1</h2>
-            <p>Building the foundation of a full stack developer from scratch - one stage at a time.</p>
-            </section><s>
+            <p class="hero__text">Building the foundation of a full stack developer from scratch - one stage at a time.</p>
+        </div></section>
         <!-- About Section  -->
-         <sectiom id="about">
+         <section id="about"><div class="container">
             <h2>About</h2>
             <article>
                 <h3>Our Vision</h3>
-                <p>Deliver hand-on projects that bridge theory and execution in the modern web ecosystem.</p>
-                </article>
+                <p>Deliver hands-on projects that bridge theory and execution in the modern web ecosystem.</p>
+            </article>
             <article>
                 <h3>Our Mission</h3>
                 <p>Empower aspiring developers with the skills and knowledge to excel in full stack development.</p>
-                </article>
-            </section>
+            </article>
+         </div></section>
             <!-- Services Section  -->
-             <section id="services">
+             <section id="services"><div class="container">
                 <h2>Our Services</h2>
                 <ul>
                     <li>Web Development Training</li>
                     <li>Frontend & Backend Integration</li>
                     <li>API Design and Development</li>
-                    </ul>
-                    </section>
+                </ul>
+             </div></section>
             <!-- Projects Section  -->
-             <section  id="projects">
+             <section  id="projects"><div class="container">
                 <h2>Projects</h2>
                 <article>
-                    <h3>Full Stack APP</h3>
+                    <h3>Full Stack App</h3>
                     <p>A complete MERN project showcasing real-world skills in front-end, back-end, and database management.</p>
-                    </article>
-                    <article>
-                        <h3>Portfolio Site</h3>
-                        <p>Personal developer portfolio built with sematic HTML, modern CSS, and React.js integration.</p>
-                        </article>
-                        </section>
+                </article>
+                <article>
+                    <h3>Portfolio Site</h3>
+                    <p>Personal developer portfolio built with semantic HTML, modern CSS, and React.js integration.</p>
+                </article>
+             </div></section>
         <!-- Contact Section  -->
-         <section id="contact">
+         <section id="contact"><div class="container">
             <h2>Contact us</h2>
-            <form>
+            <form aria-label="Contact form">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -75,11 +77,14 @@
 
                 <button type="submit">Send Message</button>
             </form>
-         </section>
+         </div></section>
     </main>
     <!-- Footer Section -->
         <footer>
-            <p>&copy; 2025 YONGO 1. All rights reserved.</p>
+            <div class="container">
+                <p>&copy; 2025 YONGO 1. All rights reserved.</p>
+            </div>
         </footer>
-        </body>
+    <script src="script.js" defer></script>
+    </body>
 </html>

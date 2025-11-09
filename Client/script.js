@@ -13,19 +13,27 @@ document.addEventListener('DOMContentLoaded', () => {
     const herotext = document.querySelector('.hero__text');
     const backToTopBtn = document.getElementById('back-to-top');
 
-    // 2. MOBILE MENU TOGGLE
+    // 2. MOBILE MENU TOGGLE (accessible)
     if (navtoggle && navMenu) {
+        // ensure aria-expanded initial state
+        navtoggle.setAttribute('aria-expanded', 'false');
+
         navtoggle.addEventListener('click', () => {
-            navMenu.classList.toggle('nav-open');
+            const isOpen = navMenu.classList.toggle('nav-open');
             navtoggle.classList.toggle('nav-toggle-open');
+            // update aria-expanded
+            navtoggle.setAttribute('aria-expanded', String(isOpen));
         });
     }
 
-    // Close mobile menu on link click
+    // Close mobile menu on link click (also update aria)
     navlinks.forEach(link => {
         link.addEventListener('click', () => {
             if (navMenu) navMenu.classList.remove('nav-open');
-            if (navtoggle) navtoggle.classList.remove('nav-toggle-open');
+            if (navtoggle) {
+                navtoggle.classList.remove('nav-toggle-open');
+                navtoggle.setAttribute('aria-expanded', 'false');
+            }
         });
     });
 
